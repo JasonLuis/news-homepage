@@ -14,10 +14,12 @@ import {
   QHeader,
   QItemLabel,
   QIcon,
+  QImg,
   QItemSection,
   QItem,
   QSeparator,
-  QSpace
+  QSpace,
+  QAvatar
 } from 'quasar';
 
 export default defineNuxtPlugin(nuxtApp => {
@@ -36,10 +38,12 @@ export default defineNuxtPlugin(nuxtApp => {
       QHeader,
       QItemLabel,
       QIcon,
+      QImg,
       QItemSection,
       QItem,
       QSeparator,
-      QSpace
+      QSpace,
+      QAvatar
     },
     plugins: {}
   };
