@@ -35,6 +35,12 @@ const getImage = computed(
   height: 130px;
   font-family: 'Inter';
   font-style: normal;
+  &:hover {
+    .card-info__title {
+      color: #f15d51;
+      cursor: pointer;
+    }
+  }
 }
 
 .q-img {
