@@ -1,5 +1,5 @@
 <template>
-  <q-card class="no-shadow no-border-radius">
+  <q-card class="no-shadow no-border-radius q-pa-none">
     <q-card-section horizontal>
       <q-img :src="getImage" />
       <q-card-section class="q-pa-none">
@@ -35,13 +35,10 @@ const getImage = computed(
   height: 130px;
   font-family: 'Inter';
   font-style: normal;
-  &:deep(.q-card__section) {
-    padding-left: 24px;
-  }
 }
 
 .q-img {
-  width: 165px;
+  max-width: 100px;
   height: 130px;
 }
 
@@ -50,6 +47,7 @@ const getImage = computed(
   font-size: 32px;
   line-height: 32px;
   color: #c5c6ce;
+  margin-left: 24px;
 }
 
 .card-info__title {
@@ -58,6 +56,7 @@ const getImage = computed(
   line-height: 24px;
   color: #00001a;
   margin-top: 12px;
+  margin-left: 24px;
 }
 
 .card-info__description {
@@ -66,6 +65,7 @@ const getImage = computed(
   line-height: 26px;
   color: #5e607a;
   margin-top: 11px;
+  margin-left: 24px;
 }
 
 @media (max-width: $breakpoint-sm) {
