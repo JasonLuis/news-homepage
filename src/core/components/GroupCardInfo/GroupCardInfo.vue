@@ -1,6 +1,6 @@
 <template>
   <div class="group-card row justify-between">
-    <div class="col-lg-4 col-xs-12">
+    <div class="col-lg-4 col-xs-12 column items-center">
       <UiCardInfoItem
         item-number="01"
         img="image-retro-pcs.jpg"
@@ -8,7 +8,7 @@
         title="Reviving Retro PCs"
       />
     </div>
-    <div class="col-lg-4 col-xs-12">
+    <div class="col-lg-4 col-xs-12 column items-center">
       <UiCardInfoItem
         item-number="02"
         img="image-top-laptops.jpg"
@@ -16,7 +16,7 @@
         title="Top 10 Laptops of 2022"
       />
     </div>
-    <div class="col-lg-4 col-xs-12">
+    <div class="col-lg-4 col-xs-12 column items-center">
       <UiCardInfoItem
         item-number="03"
         img="image-gaming-growth.jpg"
@@ -34,6 +34,7 @@ import UiCardInfoItem from '../CardInfoItem/CardInfoItem.vue';
 <style scoped lang="scss">
 .group-card {
   max-width: 1110px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: $breakpoint-sm) {

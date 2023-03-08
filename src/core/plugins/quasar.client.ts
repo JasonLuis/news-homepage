@@ -3,6 +3,7 @@ import {
   Quasar,
   QPage,
   QBtn,
+  QBtnToggle,
   QToolbarTitle,
   QToolbar,
   QCard,
@@ -27,6 +28,7 @@ export default defineNuxtPlugin(nuxtApp => {
     components: {
       QPage,
       QBtn,
+      QBtnToggle,
       QToolbarTitle,
       QToolbar,
       QCard,

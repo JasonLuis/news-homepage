@@ -1,5 +1,5 @@
 <template>
-  <q-btn>read more</q-btn>
+  <q-btn class="no-border-radius">read more</q-btn>
 </template>
 
 <script setup lang="ts"></script>

@@ -1,6 +1,6 @@
 <template>
-  <q-header reveal class="bg-white row justify-center">
-    <q-toolbar class="bg-white text-black no-shadow">
+  <q-header class="bg-white row justify-center q-pa-none">
+    <q-toolbar class="bg-white text-black no-shadow q-pa-none">
       <q-img :src="logo" />
       <q-space />
       <template v-if="!$q.screen.lt.sm">
@@ -87,6 +87,10 @@ const sizeWindow = computed(() => {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&family=Heebo:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+.q-header {
+  margin-top: 15px;
+  position: relative;
+}
 .q-img {
   width: 65px;
   height: 40px;
@@ -99,6 +103,12 @@ const sizeWindow = computed(() => {
   font-size: 15px;
   line-height: 26px;
   color: #5e607a;
+
+  &:deep(.q-btn) {
+    &:hover {
+      color: #f15d51;
+    }
+  }
 }
 
 .q-toolbar {
